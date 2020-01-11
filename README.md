@@ -1,5 +1,16 @@
 # [RocketSeat STARTER CURSOS GRATUITOS](https://rocketseat.com.br/starter)
 
+<ul>
+  <li>Curso JavaScript :thumbsup:</li>
+  <li>Curso JavaScript-ES6 :feet:</li>
+  <li>NodeJS :feet:</li>
+  <li>ReactJS :feet:</li>
+  <li>ReactNative :feet:</li>
+</ul>
+
+:thumbsup: Concluído
+:feet: Fazendo
+
 <br/>
 <a href="https://rocketseat.com.br/"><img src="https://rocketseat.com.br/static/images/update/melhores-tecnologias.svg"></a>
 As melhores tecnologias em programação, 
