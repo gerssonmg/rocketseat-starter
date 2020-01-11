@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio Módulo 02 JavaScript</title>
+</head>
+
+<body>
+
+    <div class="divHead">
+        <button class="btnCriarQuadrado">Criar Novo Quadrado</button>
+        <button class="btnDeletarQuadrado">Deletar Quadrado</button>
+    </div>
+
+    <div>
+        <a>Lista Nomes</a>
+        <ul class="ul-nomes"></ul>
+        <input type="text" name="nome">
+        <button onClick="adicionar()">Adicionar</button>
+    </div>
+
+    <div class="divMiddler"></div>
+
+    <script>
+        var elementbtnCriarQuadrado = document.querySelector('.btnCriarQuadrado');
+        var elementbtnDeletarQuadrado = document.querySelector('.btnDeletarQuadrado');
+
+        var count = 0;
+
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        for (n of nomes) {
+            var containerNomes = document.querySelector('.ul-nomes');
+            let nomesLista = document.createElement('li');
+            nomesLista.appendChild(document.createTextNode(n))
+            containerNomes.appendChild(nomesLista);
+        }
+
+        function adicionar() {
+            var containerNomes2 = document.querySelector('.ul-nomes');
+            let elementLI = document.createElement('li');
+            let nomeNovo = document.querySelector('input[name=nome]');
+            elementLI.appendChild(document.createTextNode(nomeNovo.value))
+            containerNomes2.appendChild(elementLI);
+            nomeNovo.value = '';
+        }
+
+        elementbtnCriarQuadrado.onclick = function () {
+            let boxRed2 = document.createElement('nav');
+            boxRed2.style.width = '100px';
+            boxRed2.style.height = '100px';
+            boxRed2.className = 'btCaixa';
+            boxRed2.style.backgroundColor = defineCor();
+            document.querySelector('.divMiddler').appendChild(boxRed2);
+
+            boxRed2.onmouseover = function () {
+                boxRed2.style.backgroundColor = getRandomColor();
+            }
+        }
+
+        elementbtnDeletarQuadrado.onclick = function () {
+            document.querySelector('.divMiddler').removeChild(document.getElementsByTagName('nav')[0]);
+            console.log("Rev:" + document.querySelector('.btCaixa'));
+        }
+
+        defineCor = function () {
+            if (count === 0) {
+                count++;
+                return 'red';
+            }
+            else if (count === 1) {
+                count++;
+                return 'blue';
+            }
+            else {
+                count = 0;
+                return 'yellow';
+            }
+        }
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+    </script>
+</body>
+
+</html>

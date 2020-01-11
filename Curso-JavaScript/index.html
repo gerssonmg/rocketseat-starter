@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Curso JavaScript</title>
+</head>
+<body>
+    <div id="app-h2">
+        <h2 id="titulo">Curso</h2>
+    </div>
+
+    <div id="app">
+        <input id="nome">
+    </div>
+    <script>
+
+        var h2Titulo = document.querySelector("#titulo")
+        console.log(h2Titulo)
+
+        var linkElement = document.createElement('a');
+
+        var inp = document.querySelector('input[id=nome]')
+        //linkElement.setAttribute('href', 'http://rocketseat.com.br');
+
+        var textElement = document.createTextNode('Acessar Site')
+        linkElement.appendChild(textElement);
+
+        var containerEl = document.querySelector('#app');
+
+        var containerElH2 = document.querySelector('#app-h2');
+
+        linkElement.onclick = function () {
+            //alert(inp.value)
+            if (inp.value === "G") {
+                alert('ENGENHEIRO')
+                containerElH2.removeChild(h2Titulo);
+            }
+            else if (inp.value === "GG") {
+                containerElH2.appendChild(h2Titulo);
+            }
+            else {                
+                alert('nout found')
+                containerEl.appendChild(document.createElement('a'))
+            }
+        }
+        containerEl.appendChild(linkElement)
+    </script>
+</body>
+</html>
