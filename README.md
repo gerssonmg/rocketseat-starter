@@ -1,4 +1,4 @@
-# [RocketSeat](https://rockeatseat.com.br) 
+# [RocketSeat STARTER CURSOS GRATUITOS](https://rockeatseat.com.br) 
 
 <br/>
 <a href="https://rocketseat.com.br/"><img src="https://rocketseat.com.br/static/images/update/melhores-tecnologias.svg"></a>
