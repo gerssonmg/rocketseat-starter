@@ -1,8 +1,8 @@
 module.exports = {
-    entry: ['@babel/polyfill', './src/main.js'],
+    entry: './src/main.js',
     output: {
         path: __dirname + '/public',
-        filename: 'bundler.js'
+        filename: 'bundle.js',
     },
     devServer: {
         contentBase: __dirname + '/public'
@@ -13,9 +13,9 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader'
+                    loader: 'babel-loader',
                 }
             }
-        ]
-    }
+        ],
+    },
 };
