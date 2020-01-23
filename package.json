@@ -1,0 +1,19 @@
+{
+  "name": "rocketseat",
+  "version": "1.0.0",
+  "description": "<ul>\r   <li>Curso JavaScript :thumbsup:</li>\r   <li>Curso JavaScript-ES6 :feet:</li>\r   <li>NodeJS :feet:</li>\r   <li>ReactJS :feet:</li>\r   <li>ReactNative :feet:</li>\r </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerssonmg/rocketseat-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerssonmg/rocketseat-starter/issues"
+  },
+  "homepage": "https://github.com/gerssonmg/rocketseat-starter#readme"
+}
