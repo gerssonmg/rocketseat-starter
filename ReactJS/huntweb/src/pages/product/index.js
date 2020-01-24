@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import api from '../../services/api';
+import './styles.css';
 
 
 export default function Product(props) {
@@ -16,7 +17,7 @@ export default function Product(props) {
     }, []);
 
     return (
-        <div className="product-list">
+        <div className="product-info">
             <h1>{product.title}</h1>
             <p>{product.description}</p>
             <p>
