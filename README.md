@@ -4,8 +4,8 @@
   <li>Curso JavaScript :thumbsup:</li>
   <li>Curso JavaScript-ES6 :thumbsup:</li>
   <li>NodeJS :thumbsup:</li>
-  <li>ReactJS :feet:</li>
-  <li>ReactNative :feet:</li>
+  <li>ReactJS :thumbsup:</li>
+  <li>ReactNative :thumbsup:</li>
 </ul>
 
 :thumbsup: Concluído
